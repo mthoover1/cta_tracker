@@ -1,1 +1,21 @@
-<h1><%= @user.username %></h1>
+<h1><%= @user.username %> - Stations</h1>
+
+<h2>My Stations</h2>
+
+<% current_user.stations.each do |station| %>
+  <div>
+   <div class="station-name">
+		<%= link_to station.name, station_path(station) %>
+   </div>
+    <% station.lines.each do |line| %>
+      <div class="line-icon" id="<%= line.name.downcase %>">&nbsp;</div>
+    <% end %>
+    <div class="delete-station-x">
+    	<%= link_to "x", station_path(station) %>
+    	<-- WIP | old -->
+    	<a href="/delete/station/<%= station.id %>">x</a>
+    	<input id="delete-station-id" type="hidden" value="<%= station.id %>">
+    </div>
+  </div>
+<% end %>
+
