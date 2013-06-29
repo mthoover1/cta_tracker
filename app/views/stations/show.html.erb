@@ -1,1 +1,21 @@
-<h1><%= @station.name %></h1>
+<div class="station-header">
+	<div class="sh-left">
+		<% @station.lines.each do |line| %>
+		<div class="station-color" style="height: <%= (1.0 / @station.lines.count * 100).to_s %>%; background-color: <%= line.color %>">
+		</div>
+		<% end %>
+	</div>
+	<div class="sh-center"><h2><%= @station.name %></div>
+	<div class="sh-right">
+		<% @station.lines.each do |line| %>
+		<div class="station-color" style="height: <%= (1.0 / @station.lines.count * 100).to_s %>%; background-color: <%= line.color %>">
+		</div>
+		<% end %>
+	</div>
+</div>
+
+
+
+<div id="map-canvas">Map here:</div>
+<input type=hidden id="latitude" value="<%= @station.latitude %>">
+<input type=hidden id="longitude" value="<%= @station.longitude %>">
