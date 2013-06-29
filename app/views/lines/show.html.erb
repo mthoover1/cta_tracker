@@ -1,0 +1,5 @@
+<h1><%= @line.name %></h1>
+
+<% @line.stations.each do |station| %>
+	<%= link_to station.name, station_path(station) %><br>
+<% end %>
