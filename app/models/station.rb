@@ -1,4 +1,6 @@
 class Station < ActiveRecord::Base
+	attr_accessible :name, :cta_id, :latitude, :longitude
+
   has_many :stops, :dependent => :destroy
   has_many :connections, :dependent => :destroy
   has_many :lines, :through => :connections

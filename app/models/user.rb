@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  attr_accessible :username, :email, :password
+  
   has_many :user_stations, :dependent => :destroy
   has_many :stations, :through => :user_stations
   has_many :user_lines, :dependent => :destroy
