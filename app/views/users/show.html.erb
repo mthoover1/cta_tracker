@@ -11,10 +11,7 @@
       <div class="line-icon" id="<%= line.name.downcase %>">&nbsp;</div>
     <% end %>
     <div class="delete-station-x">
-    	<%= link_to "x", station_path(station) %>
-    	<-- WIP | old -->
-    	<a href="/delete/station/<%= station.id %>">x</a>
-    	<input id="delete-station-id" type="hidden" value="<%= station.id %>">
+    	<%= link_to "x", removestation_path(:station_id => station.id) %>
     </div>
   </div>
 <% end %>
