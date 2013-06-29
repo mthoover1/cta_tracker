@@ -1,0 +1,5 @@
+<h1>Lines</h1>
+
+<% @lines.each do |line| %>
+	<%= link_to line.name, line_path(line) %><br>
+<% end %>

@@ -10,4 +10,8 @@ class Station < ActiveRecord::Base
   validates_presence_of :name, :cta_id
   validates_uniqueness_of :cta_id
   validates_uniqueness_of :latitude, :scope => :longitude
+
+  def to_param
+  	cta_id
+	end
 end
