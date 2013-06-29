@@ -1,4 +1,6 @@
 class Connection < ActiveRecord::Base
+	attr_accessible :station_id, :line_id
+
   belongs_to :station
   belongs_to :line
 
