@@ -1,0 +1,16 @@
+<h1>Signup</h1>
+
+<%= form_for @user do |f| %>
+
+  <%= label_tag :username %>
+  <%= f.text_field :username, placeholder: "Username" %>
+
+  <%= label_tag :email %>
+  <%= f.email_field :email, placeholder: "Email" %>
+
+  <%= label_tag :password %>
+  <%= f.password_field :password, placeholder: "Password" %>
+
+  <%= f.submit "Signup" %>
+
+<% end %>
