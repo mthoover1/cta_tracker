@@ -94,6 +94,64 @@ nav {
   color: black;
 }
 
+/* --------------- LINE PAGE */
+
+.line-header {
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+.line-header h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#yellow h2 {
+  color: black;
+}
+
+.station-name {
+  display: inline-block;
+  margin: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.station-name a {
+  text-decoration: none;
+  color: black;
+}
+
+.line-icon {
+  width: 18px;
+  /*height: 30px;*/
+  display: inline-block;
+  margin: -10px 0 0 0;
+  padding: 0;
+  /*border-radius: 5px;*/
+}
+
+.vertical-map {
+  width: 26px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+.vertical-map-dot {
+  background-color: white;
+  border-radius: 100%;
+  height: 18px;
+  width: 18px;
+  margin: 19.8px auto 19.95px auto;
+}
+
+.vertical-map-dot:first-child {
+  margin-top: 10px;
+}
+
 /* --------------- STATION PAGE */
 
 .station-header {
@@ -132,6 +190,12 @@ nav {
 
 .station-color {
   width: 100%;
+}
+
+#map-canvas {
+  height: 400px;
+  width: 600px;
+  box-shadow: 3px 3px 2px #b5b5b5;
 }
 
 /* --------------- LINE COLORS */
