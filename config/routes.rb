@@ -6,6 +6,7 @@ TransitRails::Application.routes.draw do
 
   match '/signup',  to: 'users#new'
   match '/login',   to: 'sessions#new'
+  match '/profile', to: 'users#show'
   match '/logout',  to: 'sessions#destroy'
 
   root :to => 'lines#index'

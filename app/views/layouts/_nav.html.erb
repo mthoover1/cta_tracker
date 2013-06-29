@@ -1,0 +1,17 @@
+<nav>
+  <div id="title">
+  	<%= link_to "Chicago Train Tracker", root_url %>
+  </div>
+  <div id="nav-links">
+    <% unless current_user %>
+
+      <div><%= link_to "Signup", '/signup' %></div>
+      <div><%= link_to "Login", '/login' %></div>
+    <% end %>
+    <% if current_user %>
+      <div><%= link_to "Profile", '/profile' %></div>
+      <div><%= link_to "Logout", logout_path %></div>
+    <% end %>
+    <div><%= link_to "ReportBug" %></div>
+  </div>
+</nav>
