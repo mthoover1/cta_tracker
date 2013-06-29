@@ -1,0 +1,5 @@
+<div id="line-list-container">
+  <% @lines.each do |line| %>
+		<%= render partial: 'lines/listview', locals: {line: line} %>
+  <% end %>
+</div>

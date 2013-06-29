@@ -8,4 +8,8 @@ class Line < ActiveRecord::Base
 
   validates_presence_of :name, :color
   validates_uniqueness_of :name, :color
+
+  def to_param
+  	name.downcase
+	end
 end
