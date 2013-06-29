@@ -1,0 +1,5 @@
+<div class="vertical-map" style="background-color: <%= line.color %>; height: <%= line.stations.count * 37.9 %>px">
+  <% line.stations.count.times do %>
+		<div class="vertical-map-dot"></div>
+	<% end %>
+</div>

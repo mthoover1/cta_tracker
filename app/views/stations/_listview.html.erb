@@ -1,0 +1,11 @@
+<div>
+ <div class="station-name">
+	<%= link_to station.name, station_path(station) %>
+ </div>
+
+  <% station.lines.each do |line| %>
+    <% if line.name != @line.name %>
+    <div class="line-icon" id="<%= line.name.downcase %>">&nbsp;</div>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<div class="line-header" id="<%= @line.name.downcase %>">
+  <h2><%= @line.name %></h2>
+</div>
+
+<%= render partial: 'lines/vertical_map', locals: {line: @line} %>
+
+<% @line.stations.each do |station| %>
+  <%= render partial: 'stations/listview', locals: {station: station} %>
+<% end %>
+

@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<nav>
+    <div id="title">
+    	<%= link_to "Chicago Train Tracker", root_url %>
+    </div>
+    <div id="nav-links">
+      <% unless session[:user_id] %>
+      <div><a href="/signup">Sign Up</a></div>
+      <div><a href="/login">Login</a></div>
+      <% end %>
+      <% if session[:user_id] %>
+      <div><%= link_to "Profile", user_path(session[:user_id]) %></div>
+      <div><%= link_to "Logout", logout_path %></div>
+      <% end %>
+      <div><%= link_to "ReportBug" %></div>
+    </div>
+  </nav>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
