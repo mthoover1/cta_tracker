@@ -1,5 +1,11 @@
-<h1>Lines</h1>
-
-<% @lines.each do |line| %>
-	<%= link_to line.name, line_path(line) %><br>
-<% end %>
+<div id="line-list-container">
+  <% @lines.each do |line| %>
+  	<div class="line-parent" id="<%= line.name.downcase %>">
+	  	<%= link_to line_path(line) do %>
+		    <div class="line-child">
+		    	<%= line.name %>
+		    </div>
+	    <% end %>
+	  </div>
+  <% end %>
+</div>
