@@ -1,13 +1,170 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/* --------------- NAV BAR */
+
+nav {
+	width: 100%;
+  height: 56px;
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #000000 0%, #383838 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#383838)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #000000 0%,#383838 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #000000 0%,#383838 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #000000 0%,#383838 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #000000 0%,#383838 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
+}
+
+#title {
+  display: inline;
+}
+
+#title a {
+}
+
+#title a, #title a:hover, #title a:visited {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 56px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+#nav-links {
+  display: inline;
+  float: right;
+}
+
+#nav-links div {
+  display: inline;
+  /*margin-right: 20px;*/
+}
+
+#nav-links a, #nav-links a:visited {
+  color: white;
+  font-size: 16px;
+  line-height: 56px;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+#nav-links a:hover {
+  color: #B3DDF2;
+}
+
+/* --------------- CONTAINER */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px 20px 20px 20px;
+}
+
+/* --------------- HOMEPAGE */
+
+#line-list-container {
+  margin-top: 30px;
+}
+
+.line-parent {
+  margin: 10px auto;
+  width: 420px;
+  box-shadow: 3px 3px 2px #b5b5b5;
+}
+
+.line-child {
+  padding-left: 20px;	
+}
+
+#line-list-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: bold;
+  width: 100%;
+}
+
+#yellow a {
+  color: black;
+}
+
+/* --------------- STATION PAGE */
+
+.station-header {
+  /*width: 100%;*/
+  font-size: 40px;
+  margin: 40px 0 10px 0;
+  /*padding-left: 20px;*/
+  display: inline-block;
+  /*background-color: gray;*/
+}
+
+.sh-left {
+  float: left;
+  width: 80px;
+  height: 70px;
+}
+
+.sh-center {
+  float: left;
+  height: 70px;
+  background-color: #565A5C;
+  padding: 0 30px;
+}
+
+.sh-center h2 {
+  margin: 0;
+  line-height: 70px;
+  color: white;
+}
+
+.sh-right {
+  width: 80px;
+  float: left;
+  height: 70px;
+}
+
+.station-color {
+  width: 100%;
+}
+
+/* --------------- LINE COLORS */
+
+#red {
+  background-color: #C60C30;
+}
+
+#blue {
+  background-color: #00A1DE;
+}
+
+#brown, #brn {
+  background-color: #62361B;
+}
+
+#green, #g {
+  background-color: #009B3A;
+}
+
+#orange, #org {
+  background-color: #F9461C;
+}
+
+#purple, #p {
+  background-color: #522398;
+}
+
+#pink {
+  background-color: #E27EA6;
+}
+
+#yellow, #y {
+  background-color: #F9E300;
+  color: black;
+}
