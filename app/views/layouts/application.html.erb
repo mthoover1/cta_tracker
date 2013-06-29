@@ -12,13 +12,13 @@
     	<%= link_to "Chicago Train Tracker", root_url %>
     </div>
     <div id="nav-links">
-      <% unless session[:id] %>
+      <% unless session[:user_id] %>
       <div><a href="/signup">Sign Up</a></div>
       <div><a href="/login">Login</a></div>
       <% end %>
-      <% if session[:id] %>
-      <div><a href="/profile">Profile</a></div>
-      <div><a href="/logout">Logout</a></div>
+      <% if session[:user_id] %>
+      <div><%= link_to "Profile", user_path(session[:user_id]) %></div>
+      <div><%= link_to "Logout", logout_path %></div>
       <% end %>
       <div><%= link_to "ReportBug" %></div>
     </div>
