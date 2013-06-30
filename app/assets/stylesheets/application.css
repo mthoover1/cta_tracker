@@ -220,6 +220,38 @@ form input{
   box-shadow: 3px 3px 2px #b5b5b5;
 }
 
+.stop {
+  margin-bottom: 20px;
+}
+
+.stop h2 {
+  margin: 20px 0 0 0;
+}
+
+.train {
+  height: 100px;
+  width: 110px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.train-dest {
+  width: 100%;
+  height: 39px;
+  border-bottom: 1px solid gray;
+  line-height: 39px;
+  font-size: 14px;
+}
+
+.train-time {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 36px;
+}
+
 /* --------------- LINE COLORS */
 
 #red {
