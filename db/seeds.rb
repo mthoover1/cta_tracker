@@ -530,7 +530,7 @@ station.stops << Stop.create(cta_id: 30198, direction: "Southbound")
 station = Station.create(name: "Loyola", cta_id: 41300, latitude: 42.00090, longitude: -87.66112)
 station.lines << Line.find_by_id(1)
 station.stops << Stop.create(cta_id: 30251, direction: "Northbound")
-station.stops << Stop.create(cta_id: 30251, direction: "Southbound")
+station.stops << Stop.create(cta_id: 30252, direction: "Southbound")
 
 station = Station.create(name: "Madison/Wabash", cta_id: 40640, latitude: 41.88210, longitude: -87.62620)
 station.lines << Line.find_by_id(3)
