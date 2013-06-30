@@ -179,7 +179,7 @@ station.lines << Line.find_by_id(2)
 station.stops << Stop.create(cta_id: 30111, direction: "Northbound")
 station.stops << Stop.create(cta_id: 30112, direction: "Southbound")
 
-station = Station.create(name: "Central Park", cta_id: 40780, latitude: 41.85380, longitude: 87.71510)
+station = Station.create(name: "Central Park", cta_id: 40780, latitude: 41.85380, longitude: -87.71510)
 station.lines << Line.find_by_id(7)
 station.stops << Stop.create(cta_id: 30151, direction: "Eastbound")
 station.stops << Stop.create(cta_id: 30152, direction: "Westbound")
