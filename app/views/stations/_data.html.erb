@@ -3,19 +3,18 @@
 	<% @station.stops.each {|stop| directions << stop.direction if !directions.include?(stop.direction)} %>
 	<% directions.sort.each do |direction| %>
 		<% trains = [] %>
-		<% @station.stops.each do |station| %>
-			<% if station.direction == direction %>
-				<% trains << rand(1000) %>
-				<% trains << rand(1000) %>
-				<% trains << rand(1000) %>
+		<% @station.stops.each do |stop| %>
+			<% if stop.direction == direction %>
+				<% data = CTA::TrainTracker.arrivals :stpid => stop.cta_id %>
+				<% data.each {|data| trains << data} %>
 			<% end %>
 		<% end %>
 		<div class="stop">
 			<h2><%= direction %></h2>
-			<% trains.sort.each do |train| %>
-				<div class="train" id="<%= @station.lines.sample.name.downcase %>">
-					<div class="train-dest">destin.</div>
-					<div class="train-time"><%= train %></div>
+			<% sort_arrivals(trains).each do |train| %>
+				<div class="train" id="<%= train.rt.downcase %>">
+					<div class="train-dest"><%= train.destNm %></div>
+					<div class="train-time"><%= time(train.arrT, train.isSch) %></div>
 				</div>
 			<% end %>
 		</div>
