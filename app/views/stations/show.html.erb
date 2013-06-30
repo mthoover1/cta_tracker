@@ -1,26 +1,6 @@
 <%= render partial: 'stations/header', locals: {station: @station} %>
 
-<div class="data-container">
-	<% directions = [] %>
-	<% @station.stops.each {|stop| directions << stop.direction if !directions.include?(stop.direction)} %>
-	<% directions.sort.each do |direction| %>
-		<% trains = [] %>
-		<% @station.stops.each do |station| %>
-			<% if station.direction == direction %>
-				<% trains << rand(1000) %>
-				<% trains << rand(1000) %>
-				<% trains << rand(1000) %>
-			<% end %>
-		<% end %>
-		<div>
-			<h2><%= direction %></h2>
-			<% trains.sort.each do |train| %>
-				<div><%= train %></div>
-			<% end %>
-		</div>
-	<% end %> 
-	<h4>* scheduled</h4>
-</div>
+<%= render partial: 'stations/data', locals: {station: @station} %>
 
 <div id="map-canvas">Map here:</div>
 <input type=hidden id="latitude" value="<%= @station.latitude %>">
