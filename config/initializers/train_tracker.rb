@@ -1,0 +1,1 @@
+CTA::TrainTracker.key = ENV["CTA_TRAIN_TRACKER_KEY"]
