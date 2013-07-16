@@ -17,6 +17,5 @@
 # Ignore API key YAML
 /config/local_env.yml
 
-
 # Ignore DS_Store
 .DS_Store
