@@ -8,6 +8,7 @@ $(document).ready(function() {
   function initialize() {
     var mapOptions = {
       zoom: 15,
+      scrollwheel: false,
       center: new google.maps.LatLng(latitude, longitude),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
