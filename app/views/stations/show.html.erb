@@ -1,7 +1,12 @@
 <%= render partial: 'stations/header', locals: {station: @station} %>
 
+<form id="add-station-form" action="/addstation" method="post">
+	<input type="hidden" name="station_id" value="<%= @station.id %>">
+	<input type="submit" value="Add Station">
+</form>
+
 <%= render partial: 'stations/data', locals: {station: @station} %>
 
-<div id="map-canvas">Map here:</div>
+<div id="map-canvas"></div>
 <input type=hidden id="latitude" value="<%= @station.latitude %>">
 <input type=hidden id="longitude" value="<%= @station.longitude %>">

@@ -11,6 +11,7 @@ TransitRails::Application.routes.draw do
   match '/logout',  to: 'sessions#destroy'
 
   match '/removestation', to: 'user_stations#destroy'
+  match '/addstation', to: 'user_stations#create', :via => :post
 
   root :to => 'lines#index'
 end
