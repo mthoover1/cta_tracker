@@ -18,6 +18,17 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
 }
 
+#nav-accent {
+  height: 4px;
+  width: 100%;
+}
+
+.nav-accent-color {
+  height: 4px;
+  width: 12.5%;
+  float: left;
+}
+
 #title {
   display: inline;
 }
@@ -87,7 +98,7 @@ form input{
 }
 
 .line-child {
-  padding-left: 20px;	
+  padding-left: 20px;
 }
 
 #line-list-container a {
