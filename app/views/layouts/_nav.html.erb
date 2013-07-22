@@ -1,6 +1,16 @@
+<!-- <div id="nav-accent">
+  <div class="nav-accent-color" id="red"></div>
+  <div class="nav-accent-color" id="blue"></div>
+  <div class="nav-accent-color" id="brown"></div>
+  <div class="nav-accent-color" id="green"></div>
+  <div class="nav-accent-color" id="orange"></div>
+  <div class="nav-accent-color" id="purple"></div>
+  <div class="nav-accent-color" id="pink"></div>
+  <div class="nav-accent-color" id="yellow"></div>
+</div> -->
 <nav>
   <div id="title">
-  	<%= link_to "Chicago Train Tracker", root_url %>
+    <%= link_to "Chicago Train Tracker", root_url %>
   </div>
   <div id="nav-links">
     <% unless current_user %>
@@ -12,6 +22,5 @@
       <div><%= link_to "Profile", '/profile' %></div>
       <div><%= link_to "Logout", logout_path %></div>
     <% end %>
-    <div><%= link_to "ReportBug" %></div>
   </div>
 </nav>
