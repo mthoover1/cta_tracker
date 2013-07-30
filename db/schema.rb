@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20130629153115) do
   create_table "connections", :force => true do |t|
     t.integer  "station_id"
     t.integer  "line_id"
+    t.integer  "sort_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
