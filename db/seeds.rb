@@ -87,7 +87,7 @@ station = Station.create(name: "95th/Dan Ryan", cta_id: 40450, latitude: 41.7215
 station.lines << Line.find_by_id(1)
 station.connections.find_by_line_id(1).update_attributes(sort_id: 33)
 station.stops << Stop.create(cta_id: 30088, direction: "Northbound")
-station.stops << Stop.create(cta_id: 30089, direction: "Southbound")
+# station.stops << Stop.create(cta_id: 30089, direction: "Southbound")
 
 station = Station.create(name: "Adams/Wabash", cta_id: 40680, latitude: 41.87958, longitude: -87.62612)
 station.lines << Line.find_by_id(3)
@@ -102,7 +102,6 @@ station.lines << Line.find_by_id(7)
 station.connections.find_by_line_id(7).update_attributes(sort_id: 19)
 station.stops << Stop.create(cta_id: 30131, direction: "Northbound (Outer Loop)")
 station.stops << Stop.create(cta_id: 30132, direction: "Southbound (Inner Loop)")
-
 
 station = Station.create(name: "Addison", cta_id: 41240, latitude: 41.94640, longitude: -87.71858)
 station.lines << Line.find_by_id(2)
