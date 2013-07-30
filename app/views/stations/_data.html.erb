@@ -5,19 +5,21 @@
 		<% trains = [] %>
 		<% @station.stops.each do |stop| %>
 			<% if stop.direction == direction %>
-				<% data = CTA::TrainTracker.arrivals :stpid => stop.cta_id %>
-				<% data.each {|data| trains << data} %>
+				<% trains_data = CTA::TrainTracker.arrivals :stpid => stop.cta_id %>
+				<% trains_data.each {|train| trains << train} %>
 			<% end %>
 		<% end %>
 		<div class="stop">
 			<h2><%= direction %></h2>
 			<% sort_arrivals(trains).each do |train| %>
-				<div class="train" id="<%= train.rt.downcase %>">
-					<div class="train-dest"><%= train.destNm %></div>
-					<div class="train-time"><%= time(train.arrT, train.isSch) %></div>
-				</div>
+				<% unless train.destNm == @station.name %>
+					<div class="train" id="<%= train.rt.downcase %>">
+						<div class="train-dest"><%= train.destNm %></div>
+						<div class="train-time"><%= time(train.arrT, train.isSch) %></div>
+					</div>
+				<% end %>
 			<% end %>
 		</div>
-	<% end %> 
+	<% end %>
 	<h4>* scheduled</h4>
 </div>
