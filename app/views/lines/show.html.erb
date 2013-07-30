@@ -4,7 +4,7 @@
 
 <%= render partial: 'lines/vertical_map', locals: {line: @line} %>
 
-<% @line.stations.each do |station| %>
+<% @line.stations.order("sort_id").each do |station| %>
   <%= render partial: 'stations/listview', locals: {station: station} %>
 <% end %>
 
