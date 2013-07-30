@@ -48,7 +48,7 @@ station.stops << Stop.create(cta_id: 30025, direction: "Southbound")
 
 station = Station.create(name: "54th/Cermak", cta_id: 40580, latitude: 41.85185, longitude: -87.75877)
 station.lines << Line.find_by_id(7)
-station.stops << Stop.create(cta_id: 30114, direction: "Westbound")
+# station.stops << Stop.create(cta_id: 30114, direction: "Westbound")
 station.stops << Stop.create(cta_id: 30113, direction: "Eastbound")
 
 station = Station.create(name: "63rd", cta_id: 40910, latitude: 41.77985, longitude: -87.63080)
@@ -308,13 +308,13 @@ station.stops << Stop.create(cta_id: 30063, direction: "Southbound")
 
 station = Station.create(name: "Cottage Grove", cta_id: 40720, latitude: 41.78030, longitude: -87.60585)
 station.lines << Line.find_by_id(4)
-station.stops << Stop.create(cta_id: 30139, direction: "Eastbound")
+# station.stops << Stop.create(cta_id: 30139, direction: "Eastbound")
 station.stops << Stop.create(cta_id: 30140, direction: "Westbound")
 
 station = Station.create(name: "Forest Park", cta_id: 40390, latitude: 41.87333, longitude: -87.81547)
 station.lines << Line.find_by_id(2)
 station.stops << Stop.create(cta_id: 30076, direction: "Eastbound")
-station.stops << Stop.create(cta_id: 30077, direction: "Westbound")
+# station.stops << Stop.create(cta_id: 30077, direction: "Westbound")
 
 station = Station.create(name: "Foster", cta_id: 40520, latitude: 42.05397, longitude: -87.68393)
 station.lines << Line.find_by_id(6)
@@ -375,7 +375,7 @@ station.stops << Stop.create(cta_id: 30215, direction: "Southbound")
 station = Station.create(name: "Harlem", cta_id: 40020, latitude: 41.88663, longitude: -87.80488)
 station.lines << Line.find_by_id(4)
 station.stops << Stop.create(cta_id: 30003, direction: "Eastbound")
-station.stops << Stop.create(cta_id: 30004, direction: "Westbound")
+# station.stops << Stop.create(cta_id: 30004, direction: "Westbound")
 
 station = Station.create(name: "Harlem (Forest Park)", cta_id: 40980, latitude: 41.87348, longitude: -87.80447)
 station.lines << Line.find_by_id(2)
@@ -476,7 +476,7 @@ station.stops << Stop.create(cta_id: 30049, direction: "Westbound")
 
 station = Station.create(name: "Kimball", cta_id: 41290, latitude: 41.96830, longitude: -87.71305)
 station.lines << Line.find_by_id(3)
-station.stops << Stop.create(cta_id: 30249, direction: "Northbound")
+# station.stops << Stop.create(cta_id: 30249, direction: "Northbound")
 station.stops << Stop.create(cta_id: 30250, direction: "Southbound")
 
 station = Station.create(name: "King Drive", cta_id: 41140, latitude: 41.78012, longitude: -87.61582)
@@ -519,7 +519,7 @@ station.stops << Stop.create(cta_id: 30150, direction: "Southbound")
 
 station = Station.create(name: "Linden", cta_id: 41050, latitude: 42.07363, longitude: -87.69175)
 station.lines << Line.find_by_id(6)
-station.stops << Stop.create(cta_id: 30203, direction: "Northbound")
+# station.stops << Stop.create(cta_id: 30203, direction: "Northbound")
 station.stops << Stop.create(cta_id: 30204, direction: "Southbound")
 
 station = Station.create(name: "Logan Square", cta_id: 41020, latitude: 41.92923, longitude: -87.70753)
@@ -555,7 +555,7 @@ station.stops << Stop.create(cta_id: 30091, direction: "Southbound")
 station = Station.create(name: "Midway", cta_id: 40930, latitude: 41.78580, longitude: -87.74228)
 station.lines << Line.find_by_id(5)
 station.stops << Stop.create(cta_id: 30181, direction: "Northbound")
-station.stops << Stop.create(cta_id: 30182, direction: "Southbound")
+# station.stops << Stop.create(cta_id: 30182, direction: "Southbound")
 
 station = Station.create(name: "Monroe", cta_id: 40790, latitude: 41.88078, longitude: -87.62940)
 station.lines << Line.find_by_id(2)
@@ -615,7 +615,7 @@ station.stops << Stop.create(cta_id: 30298, direction: "Southbound")
 
 station = Station.create(name: "O'Hare", cta_id: 40890, latitude: 41.97767, longitude: -87.90387)
 station.lines << Line.find_by_id(2)
-station.stops << Stop.create(cta_id: 30171, direction: "Northbound")
+# station.stops << Stop.create(cta_id: 30171, direction: "Northbound")
 station.stops << Stop.create(cta_id: 30172, direction: "Southbound")
 
 station = Station.create(name: "Paulina", cta_id: 41310, latitude: 41.94377, longitude: -87.67130)
@@ -707,7 +707,7 @@ station.stops << Stop.create(cta_id: 30017, direction: "Southbound")
 
 station = Station.create(name: "Dempster-Skokie", cta_id: 40140, latitude: 42.04060, longitude: -87.75250)
 station.lines << Line.find_by_id(8)
-station.stops << Stop.create(cta_id: 30026, direction: "Northbound")
+# station.stops << Stop.create(cta_id: 30026, direction: "Northbound")
 station.stops << Stop.create(cta_id: 30027, direction: "Southbound")
 
 station = Station.create(name: "South Boulevard", cta_id: 40840, latitude: 42.02727, longitude: -87.67867)
