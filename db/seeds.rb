@@ -138,7 +138,7 @@ station.stops << Stop.create(cta_id: 30128, direction: "Southbound")
 station = Station.create(name: "Ashland/63rd", cta_id: 40290, latitude: 41.77900, longitude: -87.66438)
 station.lines << Line.find_by_id(4)
 station.stops << Stop.create(cta_id: 30056, direction: "Eastbound")
-station.stops << Stop.create(cta_id: 30057, direction: "Westbound")
+# station.stops << Stop.create(cta_id: 30057, direction: "Westbound")
 
 station = Station.create(name: "Ashland", cta_id: 40170, latitude: 41.88533, longitude: -87.66695)
 station.lines << Line.find_by_id(4)
